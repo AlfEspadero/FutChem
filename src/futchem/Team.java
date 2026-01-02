@@ -5,33 +5,41 @@ import java.util.Map;
 
 
 public class Team {
-	// Team for EA FC Ultimate Team
 	private String name;
-	private HashMap<Position,Player> players;
-	private Integer chemistry;
+	private Formation formation;
+	private Map<Slot, Player> players;
+	private Manager manager;
 
-	public Team(String name) {
+	public Team(String name, Formation formation, Manager manager) {
 		this.name = name;
-		HashMap<Position,Player> mapa = new HashMap<Position,Player>();
-		for (Position position : Position.values()) {
-			mapa.put(position, null);
+		this.formation = formation;
+		this.players = new HashMap<>();
+		for (Slot slot : formation.getSlots()) {
+			players.put(slot, null);
 		}
-		this.players = mapa;
-		this.chemistry = 0;
+		this.manager = manager;
 	}
 
-	// Getters
 	public String getName() { return name; }
 
-	public Map<Position, Player> getPlayers() { return new HashMap<Position,Player>(players); }
+	public Formation getFormation() { return formation; }
 
-	public Integer getChemistry() { return calculateChemistry(); }
-	
-	public void addOrReplacePlayer (Player player, Position position) {
-		if (player.canPlay(position)) {
-			players.put(position, player);
-		} else {
-			System.out.println("Player " + player.getName() + " cannot play in position " + position);
+	public Map<Slot, Player> getPlayers() { return new HashMap<>(players); }
+
+	public Manager getManager() { return manager; }
+
+	public void setManager(Manager manager) { this.manager = manager; }
+
+	public void addOrReplacePlayer(Player player, Slot slot) {
+		if (!players.containsKey(slot)) {
+			System.out.println("Slot " + slot + " not in this formation");
+			return;
+		}
+		if (player.canPlay(slot.getPosition())) {
+			players.put(slot, player);
+		}
+		else {
+			System.out.println("Player " + player.getName() + " cannot play " + slot.getPosition());
 		}
 	}
 
@@ -43,16 +51,22 @@ public class Team {
 		return (int) players.values().stream().filter(player -> player != null && player.isIcon()).count();
 	}
 
-	public Integer calculateChemistry() {
+	public Integer getChemistry() {
 		return players.values().stream().filter(player -> player != null).mapToInt(Player::getChemistry).sum();
-    }
-	
+	}
+
+	public Double getRating() {
+		return players.values().stream().filter(player -> player != null).mapToInt(Player::getRating).average()
+				.orElse(0.0);
+	}
+
 	public void updateChemistry() {
 		players.values().stream().filter(player -> player != null).forEach(player -> player.calculateChemistry(this));
 	}
 
 	public String toString() {
-		return name + " (" + chemistry + ")";
+		return String.format("Team: %s, Formation: %s, Rating: %.2f, Chemistry: %d, Icons: %d, Manager: %s",name,
+				formation.getName(), getRating(), getChemistry(), iconCount(), manager.getName());
 	}
 
 }

@@ -49,31 +49,54 @@ public class Player {
 		// +1/2/3 for same league with 2/4/7 other players
 		// Max chemistry is 3 in total
 		// Min chemistry is 0
-		// Icons and Heroes always have max chemistry and (for now) do not contribute to others' chemistry
+		// Icons always have max chemistry and count as 1 towards all leagues, and count
+		// as 2 towards those with same nationality
+		// Heroes always have max chemistry and count as 2 towards those with the same
+		// league, and normally towards same nationality
 		if (isIcon() || isHero()) {
 			this.chemistry = 3;
 			return;
 		}
 		int clubCount = 0;
-		int nationality = 0;
+		int nationalityCount = 0;
 		int leagueCount = 0;
 		for (Player p : team.getPlayers().values()) {
-			if (p != null && !p.equals(this) && !p.isIcon() && !p.isHero()) {
+
+			if (p != null && !p.equals(this)) {
+				if (p.isIcon()) {
+					leagueCount++;
+					nationalityCount += p.getNationality().equals(this.nationality) ? 2 : 0;
+					continue;
+				}
+
+				if (p.isHero()) {
+					leagueCount += p.getLeague().equals(this.league) ? 2 : 0;
+					nationalityCount += p.getNationality().equals(this.nationality) ? 1 : 0;
+					continue;
+				}
+
 				if (p.getClub().equals(this.club)) {
 					clubCount++;
 				}
 				if (p.getNationality().equals(this.nationality)) {
-					nationality++;
+					nationalityCount++;
 				}
 				if (p.getLeague().equals(this.league)) {
 					leagueCount++;
 				}
 			}
 		}
+		nationalityCount += team.getManager().getNationality().equals(this.nationality) ? 1 : 0;
+		leagueCount += team.getManager().getLeague().equals(this.league) ? 1 : 0;
+
 		int clubChemistry = (clubCount >= 6) ? 3 : (clubCount >= 3) ? 2 : (clubCount >= 1) ? 1 : 0;
-		int nationalityChemistry = (nationality >= 6) ? 3 : (nationality >= 3) ? 2 : (nationality >= 1) ? 1 : 0;
+		int nationalityChemistry = (nationalityCount >= 6) ? 3
+				: (nationalityCount >= 3) ? 2
+				: (nationalityCount >= 1) ? 1
+				: 0;
 		int leagueChemistry = (leagueCount >= 7) ? 3 : (leagueCount >= 4) ? 2 : (leagueCount >= 2) ? 1 : 0;
-		this.chemistry = Math.min(3, clubChemistry + nationalityChemistry + leagueChemistry); // We put min to ensure max chemistry is 3
+		// We put min to ensure max chemistry is 3
+		this.chemistry = Math.min(3, clubChemistry + nationalityChemistry + leagueChemistry);
 	}
 
 	public boolean canPlay(Position position) {
