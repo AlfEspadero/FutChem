@@ -28,7 +28,7 @@ public class Player {
 	// Getters
 	public String getName() { return name; }
 
-	public Set<Position> getPositions() { return new HashSet<Position>(positions); }
+	public Set<Position> getPositions() { return new HashSet<>(positions); }
 
 	public Integer getRating() { return rating; }
 
@@ -107,6 +107,7 @@ public class Player {
 
 	public boolean isHero() { return club.equals("Heroes"); }
 
+	@Override
 	public String toString() {
 		return name + " (" + rating + ")";
 	}

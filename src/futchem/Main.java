@@ -1,11 +1,11 @@
 package futchem;
 
+import static java.lang.IO.println;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import static java.lang.IO.*;
-
-import java.io.IOException;
 
 
 public class Main {

@@ -1,0 +1,501 @@
+name,positions,rating,nationality,club,league
+Michael Anderson,CB,79,Egypt,Barcelona,La Liga
+Santiago Nowak,LB;CB;RW,75,Egypt,LA Galaxy,MLS
+Mário Davis,RWB;RM;RW,81,Belgium,Feyenoord,Eredivisie
+Anthony Yılmaz,RB,65,Italy,Sparta Rotterdam,Eredivisie
+Josiah Rivera,RWB;CB;LWB,67,Belgium,Antalyaspor,Süper Lig
+Wyatt White,RM,65,Italy,Toronto FC,MLS
+Thomas Anderson,CB,85,Cameroon,Athletic Club,La Liga
+François Hill,LW;LWB,69,Paraguay,Sivasspor,Süper Lig
+Alexander Robinson,RW,91,South Korea,Monchengladbach,Bundesliga
+Nicolás Sanchez,RB,85,Algeria,West Ham United,Premier League
+Mason Mitchell,RWB,77,Mexico,Napoli,Serie A
+Thomas Lopez,ST,83,Turkey,Al Wehda,SPL
+Mason Kaya,LM,80,Japan,AZ Alkmaar,Eredivisie
+Levi Moore,ST;LB,70,France,Al Fateh,SPL
+Jayden Williams,RB;CM,87,Sweden,Barcelona,La Liga
+Caleb Lewis,RM;CAM,89,Croatia,Athletic Club,La Liga
+Matthew Davis,ST,65,Portugal,Napoli,Serie A
+Joseph Anderson,CDM;CAM,88,Peru,Wolfsburg,Bundesliga
+Anthony Young,LWB;LM,66,China,Al Shabab,SPL
+Mateo White,CDM,74,Paraguay,Aston Villa,Premier League
+Mateo Rivera,RW,88,Belgium,Lyon,Ligue 1
+Thomas Pereira,CDM,72,Peru,Valencia,La Liga
+David Nguyen,LM;RWB,86,Australia,Tianjin Jinmen Tiger,CSL
+Dylan Kowalski,RB,90,Brazil,Wuhan Three Towns,CSL
+Liam Perez,RM;CB,89,Norway,Lyon,Ligue 1
+Santiago Baker,RM,73,Paraguay,Aston Villa,Premier League
+William Ramirez,LB,88,Netherlands,Zhejiang,CSL
+James Thomas,LW,90,Sweden,Girona,La Liga
+Łukasz Wright,RM,78,Ukraine,West Ham United,Premier League
+Sebastian Clark,LM;RWB,70,Paraguay,Torino,Serie A
+Joseph Ferreira,GK,82,Ghana,Wolfsburg,Bundesliga
+Owen Gonzalez,ST,87,Croatia,Al Ettifaq,SPL
+Ryan Roberts,LM,91,Netherlands,Manchester City,Premier League
+Oliver Rossi,GK,78,Algeria,Austin FC,MLS
+İbrahim Martinez,RW,79,Ghana,Ajax,Eredivisie
+John Brown,GK,76,Tunisia,Trabzonspor,Süper Lig
+Carter Şahin,GK,88,Italy,Atalanta,Serie A
+Jayden Aydın,LB;CAM,84,Paraguay,Valencia,La Liga
+André Taylor,LW,88,Italy,LA Galaxy,MLS
+Ryan Lee,ST,66,Ghana,Lyon,Ligue 1
+Theodore Lee,GK,66,Germany,Al Riyadh,SPL
+João Smith,RWB,91,Turkey,Fenerbahçe,Süper Lig
+Isaac Doğan,LM;CAM,72,Egypt,Austin FC,MLS
+William Kowalski,LB;LWB,75,Egypt,Sivasspor,Süper Lig
+Rúben Young,LW,81,Argentina,Girona,La Liga
+Luke Hernandez,RB,88,Algeria,Barcelona,La Liga
+Caleb Torres,LB;CDM,89,Ukraine,Arsenal,Premier League
+Owen Smith,ST;LWB,69,Netherlands,Roma,Serie A
+Michael Şahin,LM,74,Chile,AZ Alkmaar,Eredivisie
+Henry White,CM;RW,77,Egypt,Al Hilal,SPL
+Çağlar Torres,CAM;RWB,86,Italy,Lyon,Ligue 1
+Logan Carter,GK,85,Morocco,Newcastle United,Premier League
+Grayson Walker,ST,84,Brazil,Aston Villa,Premier League
+Charles Green,CM,69,Australia,Real Madrid,La Liga
+Santiago Taylor,RB;LWB,69,Canada,Monaco,Ligue 1
+Caleb Thompson,CDM,74,Paraguay,Sivasspor,Süper Lig
+Owen Ramirez,RB,79,Russia,Union Berlin,Bundesliga
+Mário Martin,GK,89,Netherlands,Barcelona,La Liga
+Noah Nguyen,CDM,65,Cameroon,Shanghai Shenhua,CSL
+Benjamin Campbell,ST,90,Nigeria,Antalyaspor,Süper Lig
+Carter Kowalski,CAM;CB,77,Turkey,Al Shabab,SPL
+Luke Çelik,LM,70,USA,Austin FC,MLS
+Santiago Çelik,CAM,82,Italy,Manchester City,Premier League
+John Flores,CAM,77,Paraguay,Lyon,Ligue 1
+James Kaya,LB;ST,83,Argentina,Inter Miami,MLS
+Owen Roberts,ST,78,Norway,Lille,Ligue 1
+Ezra Robinson,GK,89,China,Borussia Dortmund,Bundesliga
+Owen Thompson,RB;RM,85,Sweden,Atlanta United,MLS
+André Clark,RM;CDM,87,Argentina,Atlanta United,MLS
+Owen Aydın,RM,78,Tunisia,Al Ahli,SPL
+Nicolás Aydın,LM,78,Japan,Groningen,Eredivisie
+Santiago Silva,RM;CAM,85,England,Austin FC,MLS
+Aiden Sanchez,LM;LB,83,Cameroon,Sevilla,La Liga
+David Thompson,GK,68,Tunisia,Valencia,La Liga
+Hudson Mitchell,ST,72,Morocco,Arsenal,Premier League
+André Brown,RW,88,China,Al Shabab,SPL
+Caleb Baker,GK,78,Peru,Shandong Taishan,CSL
+Michael Nowak,CM,67,Egypt,Al Fateh,SPL
+Jack Flores,RWB,73,Netherlands,Bayer Leverkusen,Bundesliga
+Oliver Thompson,LB;CM,86,Denmark,Antalyaspor,Süper Lig
+Aiden White,CB;RW,75,France,LA Galaxy,MLS
+João Martin,RW;RWB,85,Portugal,Athletic Club,La Liga
+Henry Campbell,RW,81,Peru,Başakşehir,Süper Lig
+Daniel White,CM,76,Ukraine,PSV,Eredivisie
+Luke Taylor,ST,65,Egypt,Galatasaray,Süper Lig
+Nicolás Campbell,CAM;CM,89,Brazil,Tottenham Hotspur,Premier League
+Asher Flores,CDM,83,Poland,Manchester City,Premier League
+Logan Hall,GK,85,Poland,Ajax,Eredivisie
+Gabriel Torres,RWB,79,Ukraine,Atletico Madrid,La Liga
+Michael Kılıç,GK,85,Poland,Chicago Fire,MLS
+André Rivera,CDM,90,Denmark,Beşiktaş,Süper Lig
+Michael King,LW;LM,77,Chile,Twente,Eredivisie
+Grayson Wilson,RWB;RW,87,Colombia,Galatasaray,Süper Lig
+Nicolás Pereira,RM,85,Chile,Tianjin Jinmen Tiger,CSL
+James Brown,GK,74,Paraguay,Kayserispor,Süper Lig
+Jacob Öztürk,RB,66,Spain,Beijing Guoan,CSL
+François Green,RM;RB;CM,87,Serbia,Villarreal,La Liga
+Wyatt Perez,RWB;RM,65,Peru,Tianjin Jinmen Tiger,CSL
+Benjamin Kowalski,GK,91,China,Chelsea,Premier League
+İbrahim Adams,GK,75,South Korea,Union Berlin,Bundesliga
+Santiago Hernandez,CM,65,Serbia,Freiburg,Bundesliga
+Grayson Hernandez,RM,90,Croatia,Al Shabab,SPL
+Theodore Scott,CAM,77,Peru,Lens,Ligue 1
+Mason Lopez,RB,91,Turkey,Union Berlin,Bundesliga
+Dylan Smith,GK,84,Russia,Chengdu Rongcheng,CSL
+Sebastian Robinson,RM,65,Tunisia,Al Nassr,SPL
+Joshua Williams,LB;RWB,76,England,AZ Alkmaar,Eredivisie
+Liam Arslan,CDM,71,Colombia,LAFC,MLS
+Grayson Mitchell,CAM,65,Algeria,Brighton,Premier League
+Rúben Wilson,ST,87,Denmark,Trabzonspor,Süper Lig
+Oliver Moore,RB,86,Ukraine,Seattle Sounders,MLS
+Benjamin Clark,RWB;CDM,70,Croatia,Nice,Ligue 1
+Mateo Wilson,LM,65,Tunisia,Fenerbahçe,Süper Lig
+Łukasz Rodriguez,RB,79,Germany,Liverpool,Premier League
+Liam Taylor,CAM,73,England,Shanghai Shenhua,CSL
+Mário Lewis,RWB,86,China,Real Betis,La Liga
+Hudson Kılıç,GK,90,Norway,Inter Milan,Serie A
+Aiden Young,LB,79,Denmark,Sevilla,La Liga
+Liam Pereira,LB,79,Turkey,AC Milan,Serie A
+Ethan Roberts,GK,69,Serbia,Stuttgart,Bundesliga
+Logan Baker,RM;ST,67,Portugal,Wolfsburg,Bundesliga
+Gabriel Davis,GK,75,Germany,Austin FC,MLS
+Thomas Doğan,LB;CM,65,Algeria,Rennes,Ligue 1
+Matthew Martinez,RB,69,Brazil,Wolfsburg,Bundesliga
+Charles Costa,CB,83,Serbia,AZ Alkmaar,Eredivisie
+Alexander Doğan,GK,70,France,Heerenveen,Eredivisie
+Jack Yılmaz,ST,76,Italy,Antalyaspor,Süper Lig
+Sebastian Taylor,GK,70,Australia,Austin FC,MLS
+Sebastian Kılıç,RWB,68,South Korea,Lille,Ligue 1
+Jayden Lopez,LB;RW;ST,69,Argentina,Fiorentina,Serie A
+Łukasz Arslan,CM;RWB,66,Uruguay,Real Sociedad,La Liga
+Sebastian Wilson,ST,72,South Korea,Sevilla,La Liga
+Ethan Rossi,GK,77,Sweden,Torino,Serie A
+Sebastian Çelik,LM;RM,81,Spain,Manchester City,Premier League
+Mário Jones,LW,72,USA,Bayer Leverkusen,Bundesliga
+John Green,CDM,78,Italy,PSV,Eredivisie
+Jacob Kaya,CM,72,Morocco,Henan,CSL
+Benjamin Flores,RWB,78,Ghana,RB Leipzig,Bundesliga
+Carter Pereira,RB;RW,67,China,Bologna,Serie A
+Luke Martinez,LM,75,Belgium,Torino,Serie A
+Gabriel Wilson,RW,89,Senegal,Al Hilal,SPL
+Hudson Campbell,ST,76,Senegal,Torino,Serie A
+Henry Mitchell,CAM,88,Peru,Monaco,Ligue 1
+Mário Moore,LB,90,Serbia,Valencia,La Liga
+Ezra Anderson,LWB,70,Chile,Real Betis,La Liga
+Noah Arslan,LW;RM;LWB,86,Turkey,Manchester United,Premier League
+Elijah Hall,LB,69,USA,Twente,Eredivisie
+André Aydın,RB,65,South Korea,Monchengladbach,Bundesliga
+Álvaro Doğan,CB,70,Belgium,Shandong Taishan,CSL
+James Lee,LW;RWB,73,Cameroon,AZ Alkmaar,Eredivisie
+Andrew Brown,CDM;RM,72,Croatia,Sevilla,La Liga
+Łukasz Kaya,RB,73,China,Al Ahli,SPL
+Jacob Nelson,CAM,69,Paraguay,Al Hilal,SPL
+Mário Wright,CM;RW;CB,80,Brazil,Eintracht Frankfurt,Bundesliga
+Samuel Şahin,CM,72,Serbia,Beşiktaş,Süper Lig
+Dylan Adams,GK,77,Denmark,Freiburg,Bundesliga
+Matthew Jones,GK,77,Portugal,Guangzhou,CSL
+Benjamin Arslan,CM;LWB,70,Serbia,Shanghai Port,CSL
+Łukasz Wilson,CM,85,Portugal,Newcastle United,Premier League
+Jacob Aydın,CAM;RB,75,Croatia,Barcelona,La Liga
+Nicolás Baker,CB;RWB,76,Germany,Heerenveen,Eredivisie
+Owen Taylor,RB,73,Norway,Bologna,Serie A
+Aiden Jones,GK,70,Ghana,Al Taawoun,SPL
+Michael Jones,GK,69,Canada,Manchester United,Premier League
+Lucas Wilson,CAM,67,Brazil,Manchester City,Premier League
+David Jones,CAM,82,Serbia,Valencia,La Liga
+Isaac Harris,RM,70,Uruguay,Bayern Munich,Bundesliga
+William Doğan,RM,74,Nigeria,Chelsea,Premier League
+Mário Adams,CB;ST;RWB,82,Uruguay,Feyenoord,Eredivisie
+Julian Harris,CAM,86,USA,Arsenal,Premier League
+Samuel Jones,LB,85,Nigeria,Monaco,Ligue 1
+Jacob King,LW;RM,88,Morocco,Fiorentina,Serie A
+Oliver Jackson,CDM,90,Denmark,NYCFC,MLS
+Josiah Perez,CDM;RB;LW,69,Morocco,Valencia,La Liga
+Oliver Aydın,LW;RWB,85,Senegal,Atalanta,Serie A
+Dylan Wilson,RB,68,Turkey,Nantes,Ligue 1
+Rúben Jackson,LW;ST,83,Brazil,Fiorentina,Serie A
+Álvaro Lee,GK,80,England,Atlanta United,MLS
+Jayden Martinez,LB,73,Chile,Monaco,Ligue 1
+Daniel Hall,GK,75,Croatia,Al Hilal,SPL
+Anthony Roberts,LWB,65,Russia,Atletico Madrid,La Liga
+Joshua Wilson,GK,71,Norway,Al Ittihad,SPL
+James Rivera,CB,87,Belgium,Nice,Ligue 1
+Aiden Garcia,LWB,74,Serbia,Monaco,Ligue 1
+Owen Lewis,CDM;RW,88,Belgium,Atletico Madrid,La Liga
+David Campbell,LW;CDM,66,Norway,Toronto FC,MLS
+Elijah Adams,RB,83,South Korea,Fiorentina,Serie A
+Dylan Anderson,GK,70,Spain,Girona,La Liga
+Carter Wilson,LM,84,Paraguay,Atalanta,Serie A
+Dylan Lopez,CDM,82,France,Toulouse,Ligue 1
+Mário Kowalski,ST;LW,66,France,LAFC,MLS
+Theodore Walker,LM;RW,74,Paraguay,Heerenveen,Eredivisie
+Joshua Nelson,ST,84,Spain,Sevilla,La Liga
+Liam Young,ST,75,Ukraine,Monchengladbach,Bundesliga
+Luke Martin,RM,67,Nigeria,Newcastle United,Premier League
+Caleb Wright,CM,70,Poland,Trabzonspor,Süper Lig
+Levi Roberts,RW;LM,72,Denmark,Monchengladbach,Bundesliga
+Aiden Rivera,CB,67,England,Real Sociedad,La Liga
+Theodore Rodriguez,CB,72,Sweden,Newcastle United,Premier League
+François Williams,CM,68,Australia,Chicago Fire,MLS
+Charles Torres,LB,79,Sweden,Newcastle United,Premier League
+Carter Sanchez,LWB,74,Belgium,Konyaspor,Süper Lig
+James Martinez,ST;LM,89,China,Başakşehir,Süper Lig
+Matthew Lewis,RWB;CB,69,France,Al Fateh,SPL
+Jack Miller,ST,91,Australia,Al Nassr,SPL
+André Doğan,CM;RWB,78,Ecuador,Utrecht,Eredivisie
+Carter White,RWB;CB,69,Chile,Stuttgart,Bundesliga
+Sebastian Rodriguez,CDM;CB,82,Senegal,Toulouse,Ligue 1
+Noah Pereira,RM;LM,80,Sweden,Stuttgart,Bundesliga
+Daniel Young,GK,84,Poland,Bayer Leverkusen,Bundesliga
+Leo Clark,RWB,73,Ghana,Real Sociedad,La Liga
+Thomas Aydın,LW;RB,85,Colombia,Al Ettifaq,SPL
+James Green,CDM,74,France,Al Shabab,SPL
+Joshua Arslan,RW;CAM;LWB,86,Colombia,Al Nassr,SPL
+Ethan Mitchell,RB,88,Norway,Athletic Club,La Liga
+Julian Lewis,CB,81,USA,Groningen,Eredivisie
+Lucas Rodriguez,GK,70,Netherlands,Toronto FC,MLS
+Grayson Rivera,RM,74,France,Napoli,Serie A
+İbrahim Lopez,GK,88,South Korea,Kayserispor,Süper Lig
+Jack Demir,LB;CDM,65,Poland,Marseille,Ligue 1
+Sebastian Şahin,CDM;RW,69,England,Al Fateh,SPL
+Matthew Mitchell,GK,75,Denmark,Wuhan Three Towns,CSL
+André Carter,RB;LM,81,Serbia,Al Shabab,SPL
+Hudson Brown,RB;RM,65,Algeria,Atalanta,Serie A
+François Demir,LM;RM;RW,85,Netherlands,Al Ettifaq,SPL
+Caleb Kaya,GK,88,Poland,Heerenveen,Eredivisie
+Samuel Yılmaz,LW,86,Germany,Al Taawoun,SPL
+Łukasz Hill,RW;ST;LM,68,Denmark,Seattle Sounders,MLS
+Mário Costa,LM,80,Sweden,Marseille,Ligue 1
+Çağlar Wilson,RW;CAM;RM,87,Nigeria,Zhejiang,CSL
+Henry Nguyen,GK,73,Serbia,Juventus,Serie A
+Samuel Yılmaz 3,LW,85,Ecuador,Heerenveen,Eredivisie
+Ethan Rivera,CM,84,Sweden,Ajax,Eredivisie
+Jacob Martin,RWB;LWB,80,Chile,Lille,Ligue 1
+Joshua Taylor,LW,70,Cameroon,Atlanta United,MLS
+Grayson Nelson,RM,86,Morocco,Al Fateh,SPL
+Gabriel White,RW,87,South Korea,Al Riyadh,SPL
+Josiah Anderson,RB;RM;LW,86,Italy,Borussia Dortmund,Bundesliga
+Leo Yılmaz,CAM;RB,82,Ghana,Galatasaray,Süper Lig
+Leo Clark 3,CB,78,Peru,Manchester City,Premier League
+Levi Jones,CDM;RWB,77,Germany,Liverpool,Premier League
+Matthew Şahin,LM,81,Ecuador,Vitesse,Eredivisie
+Thomas Santos,RM;CB;RW,84,South Korea,Sivasspor,Süper Lig
+Ryan Adams,RWB;LW;RM,65,England,Brighton,Premier League
+Lucas Taylor,LWB;CDM,86,Netherlands,Bayer Leverkusen,Bundesliga
+İbrahim Baker,CDM,90,Italy,Vitesse,Eredivisie
+Levi Campbell,LWB,69,Italy,LA Galaxy,MLS
+Luke Martin 3,RWB,84,Turkey,Al Nassr,SPL
+Ezra Anderson 3,CDM;ST;CAM,71,China,Nice,Ligue 1
+Joseph Lewis,RM,83,Uruguay,Henan,CSL
+Wyatt White 3,CM;RWB,75,Cameroon,Athletic Club,La Liga
+Julian Wright,LM;CDM,67,Poland,Shandong Taishan,CSL
+Hudson Yılmaz,CDM,81,Sweden,Freiburg,Bundesliga
+Owen Young,GK,88,Brazil,Kayserispor,Süper Lig
+Çağlar Baker,LB,80,Colombia,Kayserispor,Süper Lig
+Santiago Kılıç,LM,67,Croatia,Galatasaray,Süper Lig
+Elijah Jackson,CAM,73,Brazil,Real Betis,La Liga
+Jayden Young,LB,70,Serbia,Manchester City,Premier League
+Hudson Thomas,CAM,77,Paraguay,Monaco,Ligue 1
+Santiago Silva 3,CDM,70,Morocco,Sivasspor,Süper Lig
+Elijah Şahin,CB,86,Egypt,Inter Milan,Serie A
+Ezra Williams,LW,74,Argentina,Borussia Dortmund,Bundesliga
+Jack Jackson,RB;RW;RM,72,Chile,Seattle Sounders,MLS
+Anthony Moore,RW,68,Tunisia,Austin FC,MLS
+Jacob Harris,ST,73,Senegal,Chelsea,Premier League
+Mateo Smith,RW,71,Ukraine,Ajax,Eredivisie
+Álvaro Aydın,RB,86,Japan,Feyenoord,Eredivisie
+William Torres,ST;LB,91,Paraguay,Inter Miami,MLS
+Hudson Öztürk,RW,70,Canada,Chengdu Rongcheng,CSL
+Carter Carter,RW;CAM,75,Brazil,Toronto FC,MLS
+Asher Kowalski,RM,87,Ecuador,Union Berlin,Bundesliga
+Łukasz Hill 3,CM,68,Tunisia,Toulouse,Ligue 1
+Ethan Thomas,ST,78,Egypt,Bologna,Serie A
+Gabriel Adams,RW,76,Argentina,NYCFC,MLS
+James Costa,LW,87,Paraguay,Portland Timbers,MLS
+João Adams,RWB,87,Norway,Newcastle United,Premier League
+Jack Roberts,RB,68,Spain,Athletic Club,La Liga
+Çağlar Gonzalez,GK,66,England,AC Milan,Serie A
+Josiah Kowalski,LB,69,USA,Monchengladbach,Bundesliga
+Luke Harris,RM,67,Poland,Wuhan Three Towns,CSL
+Ryan Hall,RW;CB,72,Japan,Athletic Club,La Liga
+Mário Campbell,CB;CDM,71,France,Arsenal,Premier League
+Gabriel Torres 3,CM,69,Mexico,Lille,Ligue 1
+Nicolás Sanchez 3,LM;LWB,80,Russia,Heerenveen,Eredivisie
+John Ramirez,LB,66,Canada,PSV,Eredivisie
+Joshua Kowalski,LW;RW,86,Poland,LA Galaxy,MLS
+Julian Miller,RW;LM,80,Japan,AC Milan,Serie A
+Leo Smith,RW;RM,72,Canada,Fenerbahçe,Süper Lig
+Wyatt Brown,RM;LM,70,Russia,LAFC,MLS
+Owen Robinson,RW;LWB;CAM,87,Nigeria,Tianjin Jinmen Tiger,CSL
+Alexander White,CM;LM,89,Ukraine,Heerenveen,Eredivisie
+Grayson Conti,GK,69,South Korea,Bayer Leverkusen,Bundesliga
+John Hill,LM;RB,73,Ukraine,Lyon,Ligue 1
+Matthew Hill,ST;RWB,68,USA,Manchester City,Premier League
+Benjamin Aydın,LW,90,England,Beijing Guoan,CSL
+Matthew Silva,CM;RB,67,Netherlands,Toulouse,Ligue 1
+Benjamin Johnson,LM;ST,86,Paraguay,Bayern Munich,Bundesliga
+John Aydın,GK,69,Germany,Atlanta United,MLS
+Andrew Flores,CB,87,Colombia,Shanghai Port,CSL
+Julian Doğan,CAM;LW,77,Egypt,Paris Saint-Germain,Ligue 1
+Mateo Silva,RM;LW,86,Algeria,Toronto FC,MLS
+André Thomas,RB,73,Germany,Fiorentina,Serie A
+Matthew Carter,GK,72,Ghana,Zhejiang,CSL
+Wyatt Garcia,RWB,78,Croatia,Tottenham Hotspur,Premier League
+Çağlar Kowalski,CDM;RM,79,Ghana,Eintracht Frankfurt,Bundesliga
+Çağlar Nelson,CB,80,Senegal,LA Galaxy,MLS
+Charles Carter,LB,65,Poland,Portland Timbers,MLS
+Leo Bianchi,RW,83,Australia,Fiorentina,Serie A
+Josiah Rossi,LW,69,Uruguay,Adana Demirspor,Süper Lig
+William Ferreira,CAM,90,Algeria,Lille,Ligue 1
+John Lopez,CAM,69,Turkey,Al Ahli,SPL
+Mason Perez,RW,65,Spain,Manchester City,Premier League
+Owen Perez,CM,89,Peru,Eintracht Frankfurt,Bundesliga
+Theodore Williams,ST,78,Morocco,Başakşehir,Süper Lig
+Leo Scott,CAM;ST;RB,87,Tunisia,Nice,Ligue 1
+Matthew Rivera,LWB,68,Cameroon,Beijing Guoan,CSL
+Josiah Adams,LM,81,Netherlands,Roma,Serie A
+William Mitchell,LM,87,England,AZ Alkmaar,Eredivisie
+Alexander Thomas,RB,75,Serbia,Fiorentina,Serie A
+João Robinson,ST,65,France,AZ Alkmaar,Eredivisie
+Mário Anderson,RWB;CM;RB,88,Belgium,Beijing Guoan,CSL
+Wyatt Martinez,RB,71,Uruguay,Monchengladbach,Bundesliga
+William Robinson,CDM,73,USA,NYCFC,MLS
+Mason Hall,ST,87,Senegal,Trabzonspor,Süper Lig
+Caleb Jones,ST,82,Croatia,Juventus,Serie A
+Julian Miller 3,CDM,81,England,Paris Saint-Germain,Ligue 1
+Łukasz Green,GK,83,Brazil,Tianjin Jinmen Tiger,CSL
+Oliver Adams,CM,74,Belgium,Başakşehir,Süper Lig
+James Johnson,GK,80,Croatia,Fiorentina,Serie A
+Hudson Roberts,LWB;CM,71,Morocco,NYCFC,MLS
+Logan Brown,CAM,82,Egypt,Galatasaray,Süper Lig
+William Williams,RW,72,Mexico,Lille,Ligue 1
+Jack Miller 3,RM;LB,91,Algeria,Union Berlin,Bundesliga
+Joseph Martin,ST,80,Mexico,Villarreal,La Liga
+Liam Costa,CM;ST,76,Chile,Liverpool,Premier League
+Ryan Clark,LB,75,Egypt,Zhejiang,CSL
+André Silva,RB,68,South Korea,Inter Miami,MLS
+François Jackson,CM;CB,81,Uruguay,Barcelona,La Liga
+Joshua Silva,ST,84,Chile,Adana Demirspor,Süper Lig
+İbrahim Rodriguez,LWB;RW,81,Peru,Austin FC,MLS
+Elijah Thompson,CDM;CM,91,Chile,Lazio,Serie A
+Grayson Nguyen,LW,74,England,Konyaspor,Süper Lig
+Nicolás Pereira 3,CB;CDM,71,Nigeria,Al Ettifaq,SPL
+Gabriel Smith,ST,69,Poland,Manchester United,Premier League
+David Perez,RM,88,Norway,Borussia Dortmund,Bundesliga
+Mateo Demir,CM;RM;LB,85,Poland,AC Milan,Serie A
+John Robinson,CB,87,Chile,Shanghai Port,CSL
+Noah Carter,CDM,80,Japan,LA Galaxy,MLS
+Noah Hall,CDM,67,Senegal,Beşiktaş,Süper Lig
+Levi Kaya,LB,78,Ecuador,Chengdu Rongcheng,CSL
+João Taylor,CB,67,Nigeria,Shandong Taishan,CSL
+Mateo Wilson 3,LW,87,Ukraine,Atlanta United,MLS
+Michael Lewis,RM,86,Poland,Aston Villa,Premier League
+Caleb Arslan,RM;CAM;CM,85,Algeria,AZ Alkmaar,Eredivisie
+Samuel Jones 3,LWB,89,Spain,Liverpool,Premier League
+Gabriel Torres 4,RWB;RW,89,Ecuador,Liverpool,Premier League
+Levi Kaya 3,RW,85,Chile,PSV,Eredivisie
+Liam Gonzalez,CDM,85,Belgium,Twente,Eredivisie
+Nicolás Costa,LB,80,Egypt,Manchester City,Premier League
+Łukasz Anderson,ST;LM;RB,74,Algeria,Real Sociedad,La Liga
+Luke Adams,LW;CB;CDM,66,Croatia,Henan,CSL
+Oliver Nowak,RB,83,Russia,Portland Timbers,MLS
+Charles Thompson,CDM,74,USA,Napoli,Serie A
+William Thomas,GK,77,Cameroon,Nice,Ligue 1
+Logan Torres,RB,85,Poland,AC Milan,Serie A
+Joshua Davis,RB,72,Nigeria,Inter Milan,Serie A
+James Carter,RW;LWB;LM,81,Chile,Wolfsburg,Bundesliga
+John Kowalski,CM,77,Canada,Eintracht Frankfurt,Bundesliga
+Jacob Thompson,LB,65,Sweden,Nantes,Ligue 1
+Theodore Wilson,CB;LB,91,Germany,Al Riyadh,SPL
+François Kowalski,RM,90,Netherlands,Paris Saint-Germain,Ligue 1
+James Johnson 3,ST;RW,65,Netherlands,Al Hilal,SPL
+Çağlar Smith,RWB,81,Canada,Al Hilal,SPL
+Josiah Perez 3,GK,80,Spain,Al Fateh,SPL
+Nicolás Walker,CB;ST,66,China,Beijing Guoan,CSL
+Nicolás Doğan,RW,87,England,West Ham United,Premier League
+Sebastian Çelik 3,CDM;CB;RWB,69,Portugal,Barcelona,La Liga
+Lucas Wilson 3,CDM,80,Poland,Al Taawoun,SPL
+Ryan Lopez,RM,86,Nigeria,LAFC,MLS
+Owen Santos,ST,69,Serbia,Real Madrid,La Liga
+Joshua Davis 3,LW,88,Algeria,Toronto FC,MLS
+Anthony Demir,LB,65,Italy,Al Riyadh,SPL
+Ethan Kaya,RB;CM,74,China,Al Shabab,SPL
+Çağlar Nowak,GK,71,Poland,Vitesse,Eredivisie
+Mason Wright,RB,85,Argentina,Union Berlin,Bundesliga
+Theodore Aydın,CB,82,Norway,Antalyaspor,Süper Lig
+Łukasz Arslan 3,GK,83,Germany,Lyon,Ligue 1
+Łukasz Hernandez,LM,80,Egypt,Real Betis,La Liga
+Ethan Johnson,LM,84,Spain,Seattle Sounders,MLS
+Elijah Rivera,LW,88,Germany,Union Berlin,Bundesliga
+Isaac Carter,GK,89,Ukraine,AZ Alkmaar,Eredivisie
+Noah Davis,CDM;LWB;CAM,84,England,RB Leipzig,Bundesliga
+İbrahim Lopez 3,LWB,85,Netherlands,Manchester City,Premier League
+Wyatt Mitchell,CM;LW;RM,84,Peru,Manchester City,Premier League
+Anthony Anderson,LWB;ST,78,Peru,Sevilla,La Liga
+Andrew Baker,CM,79,Australia,Nice,Ligue 1
+Luke Nowak,CB,86,Morocco,Bologna,Serie A
+Noah Ramirez,RW;LWB;CDM,83,Belgium,Fiorentina,Serie A
+Çağlar Garcia,CM;CDM,74,France,Al Shabab,SPL
+Charles Sanchez,RW;LB,71,Cameroon,Torino,Serie A
+Samuel Gonzalez,LW,86,USA,Chicago Fire,MLS
+André Jackson,CM,80,Argentina,Lyon,Ligue 1
+William Robinson 3,CDM,80,Cameroon,Twente,Eredivisie
+Matthew Kowalski,LW,79,Germany,Wolfsburg,Bundesliga
+Łukasz Taylor,CM,86,Egypt,Shanghai Port,CSL
+Julian Demir,RW;CDM,85,Algeria,Nantes,Ligue 1
+Hudson Bianchi,GK,85,Algeria,Eintracht Frankfurt,Bundesliga
+John Conti,ST;LWB;CAM,78,Denmark,Girona,La Liga
+Rúben Ferreira,LWB,80,Serbia,Paris Saint-Germain,Ligue 1
+Henry Roberts,LB;LW,73,Morocco,Seattle Sounders,MLS
+Thomas Wilson,LW;LM,72,Russia,Bologna,Serie A
+Thomas Allen,GK,70,France,Al Ettifaq,SPL
+Charles White,GK,82,Serbia,Valencia,La Liga
+Dylan Campbell,CM,84,Croatia,Aston Villa,Premier League
+Anthony Costa,CB;LB,74,England,Al Ettifaq,SPL
+Isaac Harris 3,CB;CAM,73,Tunisia,Bologna,Serie A
+William Yılmaz,CDM,71,Ghana,Shanghai Shenhua,CSL
+Carter White 3,LB,67,Norway,Chicago Fire,MLS
+Noah Mitchell,CM;RWB,85,Poland,Marseille,Ligue 1
+Ezra Clark,RM,90,Germany,Al Ettifaq,SPL
+Benjamin Taylor,GK,88,Germany,Shanghai Port,CSL
+Benjamin Carter,RW,69,Ecuador,Zhejiang,CSL
+Carter Adams,CM,69,Egypt,RB Leipzig,Bundesliga
+Leo Aydın,RWB,78,Cameroon,Atalanta,Serie A
+John Martinez,LW,83,Uruguay,Atletico Madrid,La Liga
+Lucas Hernandez,GK,87,Poland,Nantes,Ligue 1
+Łukasz Young,RM;LB;CM,66,Tunisia,Monaco,Ligue 1
+Logan Smith,LB,90,Russia,Atlanta United,MLS
+John Thomas,RWB;LB,91,France,Groningen,Eredivisie
+Josiah Doğan,RB,79,Uruguay,Toronto FC,MLS
+Rúben Santos,GK,87,USA,Bayern Munich,Bundesliga
+João Rodriguez,LWB;RM,68,Ukraine,Sevilla,La Liga
+Noah Nowak,LM;RW;CDM,81,England,Borussia Dortmund,Bundesliga
+Josiah Şahin,CB,81,Denmark,Newcastle United,Premier League
+Elijah Pereira,RM;RWB,74,Canada,Brighton,Premier League
+Leo Martinez,RM;LW,88,Argentina,Konyaspor,Süper Lig
+Caleb Demir,RB,90,England,Heerenveen,Eredivisie
+Ezra Santos,LB;RB,73,Chile,Girona,La Liga
+Logan Rivera,GK,66,Ukraine,Sevilla,La Liga
+Nicolás Kowalski,LWB;RWB,76,Canada,Portland Timbers,MLS
+Oliver Carter,LM,65,Ecuador,Girona,La Liga
+Ryan Lee 3,LM,91,Germany,Marseille,Ligue 1
+Carter Sanchez 3,LB,81,Denmark,NYCFC,MLS
+Leo Scott 3,CB;CM,85,Norway,Chicago Fire,MLS
+Theodore Arslan,RM,73,Canada,Austin FC,MLS
+David Roberts,LM,75,Tunisia,Toulouse,Ligue 1
+Ethan Aydın,RW,90,Cameroon,Al Shabab,SPL
+Dylan Mitchell,LW,90,Germany,Inter Miami,MLS
+Gabriel Rossi,LB,89,Canada,Chicago Fire,MLS
+Ryan Rodriguez,RWB;CDM;RM,83,Italy,Marseille,Ligue 1
+Josiah Doğan 3,RW;RWB;CM,80,Paraguay,Juventus,Serie A
+Joseph Ramirez,RWB,80,Norway,Marseille,Ligue 1
+Samuel Torres,RB,90,Cameroon,Eintracht Frankfurt,Bundesliga
+Rúben Conti,LWB,86,Germany,Barcelona,La Liga
+Mason Martinez,LM,83,Mexico,Liverpool,Premier League
+David Santos,CB,86,Australia,Nantes,Ligue 1
+Dylan Johnson,LWB,76,Mexico,Bayer Leverkusen,Bundesliga
+Álvaro Mitchell,ST,71,France,Nice,Ligue 1
+Nicolás Nelson,RM,81,Morocco,Al Ittihad,SPL
+André Lewis,RB,77,USA,Real Madrid,La Liga
+William Santos,CB;LB;LW,88,USA,Bayern Munich,Bundesliga
+Aiden Smith,CB;CM,87,Norway,Trabzonspor,Süper Lig
+Hudson Brown 3,RW,87,Netherlands,Valencia,La Liga
+Rúben Davis,RWB,66,England,Aston Villa,Premier League
+Daniel Brown,CB,82,Peru,LAFC,MLS
+Hudson Campbell 3,CM;CAM;LB,67,Denmark,Seattle Sounders,MLS
+Mateo Williams,RWB,81,Mexico,Lille,Ligue 1
+Hudson Flores,GK,89,Norway,Bayer Leverkusen,Bundesliga
+Mateo Bianchi,GK,73,Germany,Real Sociedad,La Liga
+James Kılıç,GK,79,Uruguay,PSV,Eredivisie
+Santiago Rodriguez,CB,76,Germany,Monchengladbach,Bundesliga
+João Jackson,RWB,86,Germany,Henan,CSL
+Mário Yılmaz,ST,75,Turkey,Antalyaspor,Süper Lig
+Caleb Lopez,RM,68,Australia,Wuhan Three Towns,CSL
+Andrew Green,LM,81,Brazil,Tianjin Jinmen Tiger,CSL
+François Davis,LWB,76,Tunisia,Utrecht,Eredivisie
+Levi Nguyen,GK,87,Serbia,LAFC,MLS
+Alexander Taylor,LW,72,Nigeria,Arsenal,Premier League
+Alexander Baker,CAM;RB;LW,67,Netherlands,Real Madrid,La Liga
+Matthew Robinson,CDM,79,South Korea,Başakşehir,Süper Lig
+Álvaro Thompson,RW,83,Belgium,Antalyaspor,Süper Lig
+Benjamin Hernandez,RB,85,Japan,Toronto FC,MLS
+João Santos,CAM,84,Egypt,Al Wehda,SPL
+Caleb Çelik,RM,79,Argentina,Fiorentina,Serie A
+Anthony Nguyen,RM,85,Russia,Shandong Taishan,CSL
+Çağlar Hill,RB;CM,66,Morocco,Villarreal,La Liga
+Santiago Taylor 3,GK,78,Colombia,Sivasspor,Süper Lig
+João Doğan,RM,84,Chile,Inter Milan,Serie A
+Ryan Adams 3,ST;CDM,77,Chile,Bayer Leverkusen,Bundesliga
+Elijah Walker,RWB,67,Ecuador,Zhejiang,CSL
+Nicolás Harris,RM,71,Brazil,Athletic Club,La Liga
+Samuel Young,CAM,82,Cameroon,Inter Milan,Serie A
+Jacob Şahin,RWB,74,Tunisia,Adana Demirspor,Süper Lig
+Matthew Allen,CAM,72,Uruguay,Bayer Leverkusen,Bundesliga
+Elijah Smith,RWB;ST,75,Mexico,Twente,Eredivisie
+Alexander Harris,LM,77,England,Roma,Serie A
+Carter Pereira 3,LB,88,Serbia,Nice,Ligue 1
+Jayden Lopez 3,LWB,86,Cameroon,Al Ittihad,SPL
+Samuel Martinez,CAM,72,Brazil,Antalyaspor,Süper Lig
+Jayden Rodriguez,LW,82,Senegal,West Ham United,Premier League

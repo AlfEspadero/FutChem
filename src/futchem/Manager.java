@@ -20,6 +20,7 @@ public class Manager {
 
 	public String getNationality() { return nationality; }
 
+	@Override
 	public String toString() {
 		return String.format("Name: %s, League: %s, Nationality: %s", name, league, nationality);
 	}

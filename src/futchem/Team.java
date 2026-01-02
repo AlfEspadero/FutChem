@@ -64,6 +64,7 @@ public class Team {
 		players.values().stream().filter(player -> player != null).forEach(player -> player.calculateChemistry(this));
 	}
 
+	@Override
 	public String toString() {
 		return String.format("Team: %s, Formation: %s, Rating: %.2f, Chemistry: %d, Icons: %d, Manager: %s",name,
 				formation.getName(), getRating(), getChemistry(), iconCount(), manager.getName());

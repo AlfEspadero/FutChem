@@ -107,7 +107,9 @@ public class Formations {
 
 	public static Formation get(String name) {
 		Formation f = REGISTRY.get(name);
-		if (f == null) throw new IllegalArgumentException("Unknown formation: " + name);
+		if (f == null) {
+			throw new IllegalArgumentException("Unknown formation: " + name);
+		}
 		return f;
 	}
 
