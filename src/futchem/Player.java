@@ -106,6 +106,13 @@ public class Player {
 	public boolean isIcon() { return club.equals("Icons"); }
 
 	public boolean isHero() { return club.equals("Heroes"); }
+	
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Player player = (Player) o;
+		return name.equals(player.name);
+	}
 
 	@Override
 	public String toString() {

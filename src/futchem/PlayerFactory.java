@@ -3,17 +3,15 @@ package futchem;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-
 public class PlayerFactory {
 
-	public static List<Player> loadFromCsv(String filePath) throws IOException {
-		List<Player> players = new ArrayList<>();
+	public static Set<Player> loadFromCsv(String filePath) throws IOException {
+		Set<Player> players = new HashSet<>();
 
 		try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
 			String line;
@@ -21,6 +19,10 @@ public class PlayerFactory {
 
 			while ((line = reader.readLine()) != null) {
 				String[] fields = line.split(",");
+				// Expected fields: Name, Positions (semicolon-separated), Rating, Nationality, Club, League
+				if (fields.length != 6) {
+					continue; // Skip invalid lines
+				}
 				String name = fields[0].strip();
 				// If position is invalid or empty, skip player
 				Set<Position> positions = Arrays.stream(fields[1].split(";"))

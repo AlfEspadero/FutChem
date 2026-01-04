@@ -20,6 +20,13 @@ public class Team {
 		this.manager = manager;
 	}
 
+	public Team(Team team) {
+		this.name = team.name;
+		this.formation = team.formation;
+		this.players = new HashMap<>(team.players);
+		this.manager = team.manager;
+	}
+
 	public String getName() { return name; }
 
 	public Formation getFormation() { return formation; }
@@ -43,8 +50,10 @@ public class Team {
 		}
 	}
 
-	public void removePlayer(Player player) {
-		players.values().removeIf(p -> p != null && p.equals(player));
+	public void removePlayer(Slot slot) {
+		if (players.containsKey(slot)) {
+			players.put(slot, null);
+		}
 	}
 
 	public Integer iconCount() {
@@ -68,6 +77,41 @@ public class Team {
 	public String toString() {
 		return String.format("Team: %s, Formation: %s, Rating: %.2f, Chemistry: %d, Icons: %d, Manager: %s",name,
 				formation.getName(), getRating(), getChemistry(), iconCount(), manager.getName());
+	}
+
+	// For the following we do the same as in Team.calculateChemistry
+	// +1/2/3 for same club with 1/3/6 other players
+	// +1/2/3 for same nationality with 1/3/6 other players
+	// +1/2/3 for same league with 2/4/7 other players
+	// Ignore icons for now
+	
+	public Integer getNationalityChemistry(Player p) {
+		long val = players.values().stream()
+				.filter(player -> player != null && player.getNationality().equals(p.getNationality())).count();
+		val += manager.getNationality().equals(p.getNationality()) ? 1 : 0;
+		if (val >= 7) return 3;
+		if (val >= 4) return 2;
+		if (val >= 2) return 1;
+		return 0;
+	}
+	
+	public Integer getLeagueChemistry(Player p) {
+		long val = players.values().stream()
+				.filter(player -> player != null && player.getLeague().equals(p.getLeague())).count();
+		val += manager.getLeague().equals(p.getLeague()) ? 1 : 0;
+		if (val >= 8) return 3;
+		if (val >= 5) return 2;
+		if (val >= 3) return 1;
+		return 0;
+	}
+	
+	public Integer getClubChemistry(Player p) {
+		long val = players.values().stream()
+				.filter(player -> player != null && player.getClub().equals(p.getClub())).count();
+		if (val >= 7) return 3;
+		if (val >= 4) return 2;
+		if (val >= 2) return 1;
+		return 0;
 	}
 
 }
