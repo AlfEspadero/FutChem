@@ -7,6 +7,7 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
+
 public class Optimizer {
 
 	protected static final Level level = Level.DEBUG;
@@ -60,7 +61,7 @@ public class Optimizer {
 	 * Objective stays the same (chemistry + rating), but since we start from a full
 	 * team, we won't end up with "almost empty" solutions.
 	 */
-	public static Team optimizePlayers(Team team, Set<Player> players) {
+	public static Team optimizePlayersBT(Team team, Set<Player> players) {
 		debug("Starting team optimization...");
 
 		// 1) Always start from a filled team to avoid "empty team" optima
@@ -89,9 +90,8 @@ public class Optimizer {
 								bestScore = candidateScore;
 								bestTeam = new Team(candidate);
 								improved = true;
-								debug(String.format(
-										"Filled slot %s with %s. New chem: %s & rating: %.2f",
-										slot, p.getName(), candidate.getChemistry(), candidate.getRating()));
+								debug(String.format("Filled slot %s with %s. New chem: %s & rating: %.2f", slot,
+										p.getName(), candidate.getChemistry(), candidate.getRating()));
 							}
 						}
 					}
@@ -121,8 +121,8 @@ public class Optimizer {
 						bestTeam = new Team(candidate);
 						improved = true;
 						debug(String.format(
-								"Improved team by replacing in slot %s with %s. New chem: %s & rating: %.2f",
-								slot, p.getName(), candidate.getChemistry(), candidate.getRating()));
+								"Improved team by replacing in slot %s with %s. New chem: %s & rating: %.2f", slot,
+								p.getName(), candidate.getChemistry(), candidate.getRating()));
 					}
 				}
 			}
@@ -131,7 +131,7 @@ public class Optimizer {
 		return bestTeam;
 	}
 
-	public static Set<Team> optimizeTeam(Set<Formation> formations, Manager manager, Set<Player> players) {
+	public static Set<Team> optimizeTeamBT(Set<Formation> formations, Manager manager, Set<Player> players) {
 		debug("Starting full team optimization...");
 		SortedMap<String, Double[]> results = new TreeMap<>();
 		Set<Team> resTeam = new HashSet<>();
@@ -140,7 +140,7 @@ public class Optimizer {
 
 		for (Formation formation : formations) {
 			Team team = new Team("Optimized Team", formation, manager);
-			team = optimizePlayers(team, players);
+			team = optimizePlayersBT(team, players);
 
 			double teamScore = team.getChemistry() + team.getRating();
 			if (teamScore > bestScore) {
@@ -150,31 +150,33 @@ public class Optimizer {
 				resTeam.add(bestTeam);
 				debug(String.format("New best team found with formation %s. Chem: %s & rating: %.2f",
 						formation.getName(), team.getChemistry(), team.getRating()));
-			} else if (teamScore == bestScore) {
+			}
+			else if (teamScore == bestScore) {
 				resTeam.add(new Team(team));
-				debug(String.format(
-						"Found another team with formation %s matching best score. Chem: %s & rating: %.2f",
-						formation.getName(), team.getChemistry(), team.getRating()));
-			} else {
-				debug(String.format("Formation %s resulted in chem: %s \\& rating: %.2f",
+				debug(String.format("Found another team with formation %s matching best score. Chem: %s & rating: %.2f",
 						formation.getName(), team.getChemistry(), team.getRating()));
 			}
+			else {
+				debug(String.format("Formation %s resulted in chem: %s \\& rating: %.2f", formation.getName(),
+						team.getChemistry(), team.getRating()));
+			}
 
-			results.put(formation.getName(), new Double[] { team.getChemistry().doubleValue(), team.getRating() });
+			results.put(formation.getName(), new Double[] {
+					team.getChemistry().doubleValue(),
+					team.getRating() });
 		}
 
 		debug("Optimization results sorted by score:");
-		for (Map.Entry<String, Double[]> entry : results.entrySet().stream()
-				.sorted((e1, e2) -> {
-					double score1 = e1.getValue()[0] + e1.getValue()[1];
-					double score2 = e2.getValue()[0] + e2.getValue()[1];
-					return Double.compare(score2, score1);
-				})
-				.toList()) {
-			debug(String.format("Formation: %s => Chem: %.0f, Rating: %.2f",
-					entry.getKey(), entry.getValue()[0], entry.getValue()[1]));
+		for (Map.Entry<String, Double[]> entry : results.entrySet().stream().sorted((e1, e2) -> {
+			double score1 = e1.getValue()[0] + e1.getValue()[1];
+			double score2 = e2.getValue()[0] + e2.getValue()[1];
+			return Double.compare(score2, score1);
+		}).toList()) {
+			debug(String.format("Formation: %s => Chem: %.0f, Rating: %.2f", entry.getKey(), entry.getValue()[0],
+					entry.getValue()[1]));
 		}
 
 		return resTeam;
 	}
+	
 }

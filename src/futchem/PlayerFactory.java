@@ -42,7 +42,7 @@ public class PlayerFactory {
 	public static Player playerFromArray(String[] fields) {
 		String name = fields[0].strip();
 		// If position is invalid or empty, skip player
-		Set<Position> positions = parsePositions(fields[1].strip());
+		EnumSet<Position> positions = parsePositions(fields[1].strip());
 		Integer rating = Integer.parseInt(fields[2].strip());
 		String nationality = fields[3].strip();
 		String club = fields[4].strip();

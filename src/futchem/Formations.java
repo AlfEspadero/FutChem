@@ -20,11 +20,11 @@ public class Formations {
 		register("3-4-2-1", Position.GK, Position.CB, Position.CB, Position.CB, Position.RM, Position.CM, Position.CM,
 				Position.LM, Position.CAM, Position.CAM, Position.ST);
 
-		register("3-5-2", Position.GK, Position.CB, Position.CB, Position.CB, Position.RM, Position.CM, Position.CDM,
-				Position.CM, Position.LM, Position.ST, Position.ST);
-
 		register("3-4-3", Position.GK, Position.CB, Position.CB, Position.CB, Position.RM, Position.CM, Position.CM,
 				Position.LM, Position.RW, Position.ST, Position.LW);
+		
+		register("3-5-2", Position.GK, Position.CB, Position.CB, Position.CB, Position.RM, Position.CM, Position.CDM,
+				Position.CM, Position.LM, Position.ST, Position.ST);
 
 		// 4-back formations
 		register("4-1-2-1-2", Position.GK, Position.RB, Position.CB, Position.CB, Position.LB, Position.CDM,

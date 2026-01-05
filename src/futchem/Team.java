@@ -9,11 +9,18 @@ public class Team {
 	private Formation formation;
 	private Map<Slot, Player> players;
 	private Manager manager;
+	
+	public Team(String name, Formation formation, Manager manager, Map<Slot, Player> players) {
+		this.name = name;
+		this.formation = formation;
+		this.players = new HashMap<>(players);
+		this.manager = manager;
+	}
 
 	public Team(String name, Formation formation, Manager manager) {
 		this.name = name;
 		this.formation = formation;
-		this.players = new HashMap<>();
+		this.players = new HashMap<>(11);
 		for (Slot slot : formation.getSlots()) {
 			players.put(slot, null);
 		}
@@ -25,6 +32,13 @@ public class Team {
 		this.formation = team.formation;
 		this.players = new HashMap<>(team.players);
 		this.manager = team.manager;
+	}
+
+	public Team() {
+		this.name = null;
+		this.formation = null;
+		this.players = new HashMap<>(11);
+		this.manager = null;
 	}
 
 	public String getName() { return name; }

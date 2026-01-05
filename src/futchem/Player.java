@@ -1,20 +1,19 @@
 package futchem;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.EnumSet;
 
 
 public class Player {
 	// Player for EA FC Ultimate Team
 	private String name;
-	private Set<Position> positions;
+	private EnumSet<Position> positions;
 	private Integer rating;
 	private String nationality;
 	private String club;
 	private String league;
 	private Integer chemistry;
 
-	public Player(String name, Set<Position> positions, Integer rating, String nationality, String club,
+	public Player(String name, EnumSet<Position> positions, Integer rating, String nationality, String club,
 			String league) {
 		this.name = name;
 		this.positions = positions;
@@ -28,7 +27,7 @@ public class Player {
 	// Getters
 	public String getName() { return name; }
 
-	public Set<Position> getPositions() { return new HashSet<>(positions); }
+	public EnumSet<Position> getPositions() { return EnumSet.copyOf(positions); }
 
 	public Integer getRating() { return rating; }
 

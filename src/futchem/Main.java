@@ -15,8 +15,6 @@ public class Main {
 		println("FutChem Main");
 		println("_____________________________________________________________________________\n");
 
-		Formation formation = Formations.get("4-3-3");
-
 		Manager manager = new Manager("Simeone", "Ligue 1", "France");
 
 		Set<Player> players = new HashSet<>();
@@ -26,9 +24,10 @@ public class Main {
 			e.printStackTrace();
 		}
 
-		Team team = new Team("My Team", formation, manager);
+		Team team = new Team();
 
-		Set<Team> teams = Optimizer.optimizeTeam(Formations.getAvailableFormations(), manager, players);
+		Set<Team> teams = Optimizer.optimizeTeamBT(Formations.getAvailableFormations(), manager, players);
+
 		if (!teams.isEmpty()) {
 			if (teams.size() > 1) {
 				println(String.format("Multiple (%s) optimal teams found %s. Displaying one of them.", teams.size(),
