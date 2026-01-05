@@ -21,6 +21,11 @@ public class Formation {
 		}
 	}
 
+	public Formation(Formation formation) {
+		this.name = formation.name;
+		this.slots = new ArrayList<>(formation.slots);
+	}
+
 	public String getName() { return name; }
 
 	public List<Slot> getSlots() { return List.copyOf(slots); }

@@ -43,7 +43,7 @@ public class Team {
 
 	public String getName() { return name; }
 
-	public Formation getFormation() { return formation; }
+	public Formation getFormation() { return new Formation(formation); }
 
 	public Map<Slot, Player> getPlayers() { return new HashMap<>(players); }
 

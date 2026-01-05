@@ -142,6 +142,11 @@ public class Optimizer {
 			Team team = new Team("Optimized Team", formation, manager);
 			team = optimizePlayersBT(team, players);
 
+			// Store chemistry and rating as primitive values
+			results.put(formation.getName(), new Double[] {
+					team.getChemistry().doubleValue(),
+					team.getRating() });
+
 			double teamScore = team.getChemistry() + team.getRating();
 			if (teamScore > bestScore) {
 				resTeam.clear();
@@ -157,13 +162,9 @@ public class Optimizer {
 						formation.getName(), team.getChemistry(), team.getRating()));
 			}
 			else {
-				debug(String.format("Formation %s resulted in chem: %s \\& rating: %.2f", formation.getName(),
+				debug(String.format("Formation %s resulted in chem: %s & rating: %.2f", formation.getName(),
 						team.getChemistry(), team.getRating()));
 			}
-
-			results.put(formation.getName(), new Double[] {
-					team.getChemistry().doubleValue(),
-					team.getRating() });
 		}
 
 		debug("Optimization results sorted by score:");
@@ -178,5 +179,5 @@ public class Optimizer {
 
 		return resTeam;
 	}
-	
+
 }

@@ -10,12 +10,12 @@ import java.util.Set;
 
 
 public class Main {
-	void main() {
+	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		println("FutChem Main");
 		println("_____________________________________________________________________________\n");
 
-		Manager manager = new Manager("Simeone", "Ligue 1", "France");
+		Manager manager = new Manager("Simeone", "None", "None");
 
 		Set<Player> players = new HashSet<>();
 		try {
