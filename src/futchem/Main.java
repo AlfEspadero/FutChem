@@ -9,6 +9,16 @@ import java.util.Locale;
 import java.util.Set;
 
 
+/***
+ * * Main class for the FutChem application. Loads player data, optimizes a team
+ * based on formations, and displays the results. Kaggle dataset used
+ * (fifa_players.csv):
+ * https://www.kaggle.com/datasets/joebeachcapital/fifa-players?select=male_players_23.csv
+ * Kaggle datased used (fbref_players.csv):
+ * https://www.kaggle.com/datasets/jacksonjohannessen/fifa-and-irl-soccer-player-data?select=fifa_fbref_merged.csv
+ * * @author Alfonso Espadero
+ */
+
 public class Main {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
@@ -19,7 +29,7 @@ public class Main {
 
 		Set<Player> players = new HashSet<>();
 		try {
-			players = PlayerFactory.loadFromCsv("./data/fifa_players.csv");
+			players = PlayerFactory.loadFromCsv("./data/fbref_players.csv");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
