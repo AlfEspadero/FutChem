@@ -75,7 +75,7 @@ public class Team {
 
 	@Override
 	public String toString() {
-		return String.format("Team: %s, Formation: %s, Rating: %.2f, Chemistry: %d, Icons: %d, Manager: %s",name,
+		return String.format("Team: %s, Formation: %s, Rating: %.2f, Chemistry: %d, Icons: %d, Manager: %s", name,
 				formation.getName(), getRating(), getChemistry(), iconCount(), manager.getName());
 	}
 
@@ -84,7 +84,7 @@ public class Team {
 	// +1/2/3 for same nationality with 1/3/6 other players
 	// +1/2/3 for same league with 2/4/7 other players
 	// Ignore icons for now
-	
+
 	public Integer getNationalityChemistry(Player p) {
 		long val = players.values().stream()
 				.filter(player -> player != null && player.getNationality().equals(p.getNationality())).count();
@@ -94,7 +94,7 @@ public class Team {
 		if (val >= 2) return 1;
 		return 0;
 	}
-	
+
 	public Integer getLeagueChemistry(Player p) {
 		long val = players.values().stream()
 				.filter(player -> player != null && player.getLeague().equals(p.getLeague())).count();
@@ -104,10 +104,10 @@ public class Team {
 		if (val >= 3) return 1;
 		return 0;
 	}
-	
+
 	public Integer getClubChemistry(Player p) {
-		long val = players.values().stream()
-				.filter(player -> player != null && player.getClub().equals(p.getClub())).count();
+		long val = players.values().stream().filter(player -> player != null && player.getClub().equals(p.getClub()))
+				.count();
 		if (val >= 7) return 3;
 		if (val >= 4) return 2;
 		if (val >= 2) return 1;

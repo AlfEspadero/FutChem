@@ -3,6 +3,7 @@ package futchem;
 import static java.lang.IO.println;
 
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
@@ -16,27 +17,30 @@ public class Main {
 
 		Formation formation = Formations.get("4-3-3");
 
-		Manager manager = new Manager("Manuolo", "La Liga", "Spain");
+		Manager manager = new Manager("Simeone", "Ligue 1", "France");
 
 		Set<Player> players = new HashSet<>();
 		try {
-			players = PlayerFactory.loadFromCsv("./data/real_players.csv");
+			players = PlayerFactory.loadFromCsv("./data/fifa_players.csv");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
 		Team team = new Team("My Team", formation, manager);
 
-		//team = Optimizer.optimizePlayers(team, players);
-		team = Optimizer.optimizeTeam(Formations.getAvailableFormations(), manager, players);
-
-		/*
-		 * for (Player p : players) { Slot slot =
-		 * team.getFormation().getSlots().stream() .filter(s ->
-		 * p.canPlay(s.getPosition()) && team.getPlayers().get(s) == null).findFirst()
-		 * .orElse(null); if (slot != null) { team.addOrReplacePlayer(p, slot); } else {
-		 * println("No available slot for player " + p.getName()); } }
-		 */
+		Set<Team> teams = Optimizer.optimizeTeam(Formations.getAvailableFormations(), manager, players);
+		if (!teams.isEmpty()) {
+			if (teams.size() > 1) {
+				println(String.format("Multiple (%s) optimal teams found %s. Displaying one of them.", teams.size(),
+						teams.stream().map(t -> t.getFormation().getName()).sorted(Comparator.reverseOrder())
+								.toList()));
+			}
+			team = teams.iterator().next();
+		}
+		if (team == null) {
+			println("No team could be optimized with the given players and formations.");
+			return;
+		}
 
 		team.updateChemistry();
 		println(team);
