@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+
 public class PlayerFactory {
 
 	public static Set<Player> loadFromCsv(String filePath) throws IOException {
@@ -18,23 +19,17 @@ public class PlayerFactory {
 			reader.readLine(); // Skip header
 
 			while ((line = reader.readLine()) != null) {
-				String[] fields = line.split(",");
-				// Expected fields: Name, Positions (semicolon-separated), Rating, Nationality, Club, League
-				if (fields.length != 6) {
-					continue; // Skip invalid lines
-				}
+				String[] fields = line.split(",", -1);
+				if (fields.length < 6) continue;
 				String name = fields[0].strip();
 				// If position is invalid or empty, skip player
-				Set<Position> positions = Arrays.stream(fields[1].split(";"))
-						.map(String::trim)
-						.map(p -> {
-							try {
-								return Position.valueOf(p);
-							} catch (IllegalArgumentException e) {
-								return null;
-							}
-						}).filter(p -> p != null)
-						.collect(Collectors.toSet());
+				Set<Position> positions = Arrays.stream(fields[1].split(";")).map(String::trim).map(p -> {
+					try {
+						return Position.valueOf(p);
+					} catch (IllegalArgumentException e) {
+						return null;
+					}
+				}).filter(p -> p != null).collect(Collectors.toSet());
 				if (positions.isEmpty()) {
 					continue;
 				}

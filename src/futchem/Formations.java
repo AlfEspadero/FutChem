@@ -3,6 +3,7 @@ package futchem;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 
 public class Formations {
@@ -113,5 +114,5 @@ public class Formations {
 		return f;
 	}
 
-	public static List<String> getAvailableFormations() { return List.copyOf(REGISTRY.keySet()); }
+	public static Set<Formation> getAvailableFormations() { return Set.copyOf(REGISTRY.values()); }
 }
