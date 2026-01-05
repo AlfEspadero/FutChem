@@ -25,7 +25,7 @@ public class Main {
 		println("FutChem Main");
 		println("_____________________________________________________________________________\n");
 
-		Manager manager = new Manager("Simeone", "None", "None");
+		Manager manager = new Manager("Simeone", "La Liga", "Spain");
 
 		Set<Player> players = new HashSet<>();
 		try {
@@ -38,18 +38,11 @@ public class Main {
 
 		Set<Team> teams = Optimizer.optimizeTeamBT(Formations.getAvailableFormations(), manager, players);
 
-		if (!teams.isEmpty()) {
-			if (teams.size() > 1) {
-				println(String.format("Multiple (%s) optimal teams found %s. Displaying one of them.", teams.size(),
-						teams.stream().map(t -> t.getFormation().getName()).sorted(Comparator.reverseOrder())
-								.toList()));
-			}
-			team = teams.iterator().next();
-		}
-		if (team == null) {
-			println("No team could be optimized with the given players and formations.");
-			return;
-		}
+		if (teams.size() > 1)
+			println(String.format("Multiple (%s) optimal teams found %s. Displaying one of them.", teams.size(),
+					teams.stream().map(t -> t.getFormation().getName()).sorted(Comparator.reverseOrder()).toList()));
+
+		team = teams.iterator().next();
 
 		team.updateChemistry();
 		println(team);
@@ -57,15 +50,10 @@ public class Main {
 
 		for (Slot slot : team.getFormation().getSlots()) {
 			Player p = team.getPlayers().get(slot);
-			if (p != null) {
-				String msg = String.format("%s: %s (%s) - Chemistry: %s (%s %s, %s %s, %s %s)", slot, p.getName(),
-						p.getRating(), p.getChemistry(), team.getNationalityChemistry(p), p.getNationality(),
-						team.getLeagueChemistry(p), p.getLeague(), team.getClubChemistry(p), p.getClub());
-				println(msg);
-			}
-			else {
-				println(slot + ": Empty");
-			}
+			String msg = String.format("%s: %s (%s) - Chemistry: %s (%s %s, %s %s, %s %s)", slot, p.getName(),
+					p.getRating(), p.getChemistry(), team.getNationalityChemistry(p), p.getNationality(),
+					team.getLeagueChemistry(p), p.getLeague(), team.getClubChemistry(p), p.getClub());
+			println(msg);
 		}
 	}
 }
