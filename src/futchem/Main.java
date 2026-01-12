@@ -16,6 +16,8 @@ import java.util.Set;
  * https://www.kaggle.com/datasets/joebeachcapital/fifa-players?select=male_players_23.csv
  * Kaggle datased used (fbref_players.csv):
  * https://www.kaggle.com/datasets/jacksonjohannessen/fifa-and-irl-soccer-player-data?select=fifa_fbref_merged.csv
+ * Kaggle dataset used (2025_players.csv):
+ * https://www.kaggle.com/datasets/nyagami/ea-sports-fc-25-database-ratings-and-stats?select=all_players.csv
  * * @author Alfonso Espadero
  */
 
@@ -29,7 +31,7 @@ public class Main {
 
 		Set<Player> players = new HashSet<>();
 		try {
-			players = PlayerFactory.loadFromCsv("./data/fbref_players.csv");
+			players = PlayerFactory.loadFromCsv("./data/2025_players.csv");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

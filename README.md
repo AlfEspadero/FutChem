@@ -60,6 +60,7 @@ Sample datasets included in `data/`:
 
 - [FIFA Players (Kaggle)](https://www.kaggle.com/datasets/joebeachcapital/fifa-players)
 - [FIFA + FBRef merged (Kaggle)](https://www.kaggle.com/datasets/jacksonjohannessen/fifa-and-irl-soccer-player-data)
+- [FIFA 2025 Players (Kaggle)](https://www.kaggle.com/datasets/nyagami/ea-sports-fc-25-database-ratings-and-stats?select=all_players.csv)
 
 ## License
 
